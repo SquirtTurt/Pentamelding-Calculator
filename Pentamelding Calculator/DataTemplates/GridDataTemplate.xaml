@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:calculator="clr-namespace:Pentamelding_Calculator.Calculator"
+                    xmlns:converters="clr-namespace:Pentamelding_Calculator.Calculator.Converters">
+
+
+    <converters:RomanNumeralsConverter x:Key="RomanNumeralsConverter"/>
+    <DataTemplate DataType="{x:Type calculator:MeldSlot}" x:Key="GridDataTemplate">
+        <DockPanel>
+            <TextBlock Text="{Binding MateriaType}" DockPanel.Dock="Left"/>
+            <TextBlock Text="{Binding Rank, Converter={StaticResource RomanNumeralsConverter}}" DockPanel.Dock="Left"/>
+            <CheckBox IsChecked="{Binding Melded}" DockPanel.Dock="Right" Margin="5 0 0 0"/>
+        </DockPanel>
+    </DataTemplate>
+    <Style x:Key="CellStyle" TargetType="{x:Type DataGridCell}">
+        <Setter Property="Foreground" Value="Black" />
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Background" Value="{x:Null}" />
+                <Setter Property="BorderBrush" Value="{x:Null}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

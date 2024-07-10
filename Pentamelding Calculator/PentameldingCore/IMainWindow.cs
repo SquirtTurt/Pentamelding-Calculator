@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pentamelding_Calculator.MainWindow
+namespace Pentamelding_Calculator.PentameldingCore
 {
-    internal class MainWindowViewModel
+    public interface IMainWindow
     {
     }
 }

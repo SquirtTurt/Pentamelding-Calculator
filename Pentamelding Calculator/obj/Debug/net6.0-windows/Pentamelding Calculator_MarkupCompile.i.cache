@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\thoma\Documents\Git\Pentamelding-Calculator\Pentamelding Calculator\App.xaml
-12019044530
+4168683215
 
-61708883215
+14648581399
 194183970531
-MainWindow\MainWindow.xaml;
+Calculator\CalculatorView.xaml;DataTemplates\DataTemplates.xaml;DataTemplates\GridDataTemplate.xaml;PentameldingCore\MainWindow.xaml;
 
-False
+True
 

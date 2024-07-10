@@ -10,10 +10,9 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Pentamelding_Calculator
+namespace Pentamelding_Calculator.PentameldingCore
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +22,7 @@ namespace Pentamelding_Calculator
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }

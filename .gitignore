@@ -27,8 +27,3 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
-#Nuget packages folder
-packages/
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
